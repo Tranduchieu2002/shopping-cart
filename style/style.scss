@@ -1,0 +1,242 @@
+$font-small: "Damion", cursive;
+$font-title: "Roboto", sans-serif;
+/* COLOR */
+$text-mainColor: #9a9f9c;
+/* Text primary color */
+$text-subColor: #545d7a;
+/* Text secondary color */
+$border-color: #8e97af;
+/* used for borders */
+$cursor-color: #f0f2fb;
+/* phổ biến cho di chuột / most common for hover */
+$background-color: #f7f7f7;
+@keyframes fallIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+$font-small: "Damion", cursive;
+$font-title: "Roboto", sans-serif;
+/* COLOR */
+$text-mainColor: #9a9f9c;
+/* Text primary color */
+$text-subColor: #545d7a;
+/* Text secondary color */
+$border-color: #8e97af;
+/* used for borders */
+$cursor-color: #f0f2fb;
+/* phổ biến cho di chuột / most common for hover */
+$background-color: #f7f7f7;
+@keyframes fallIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.line {
+  border: 0;
+  background-color: #9a9f9c;
+  height: 3px;
+  cursor: pointer;
+  margin: 25px 0 45px 0;
+}
+ul {
+  list-style-type: none;
+}
+.title-style {
+  font-size: 2.3rem;
+  color: #9a9f9c;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+span {
+  display: inline-block;
+}
+.hidden {
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+.toggle > .btn-menu{
+  display: none
+}
+.toggle{
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  text-align: center;
+  align-items: center;
+  &__app-logo {
+    font-family: $font-title;
+    h3 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+  &__search {
+    display: inline-flex;
+    align-items: center;
+    height: 62px;
+    width: 420px;
+    /*     border: 2px solid #9a9f9c;
+ */
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+    form {
+      box-sizing: border-box;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      height: 60px;
+      width: 450px;
+      border: 2px solid $border-color;
+      border-radius: 3px;
+      transition: 0.25s ease;
+      &:focus-within {
+        border-color: #6a5af9;
+      }
+      input:not(:placeholder-shown) + .lable__search,
+      &:focus-within + .lable__search {
+        color: #6a5af9;
+        top: 0;
+        padding: 0 13px;
+        display: inline-block;
+        background-color: white;
+      }
+      input {
+        height: 100%;
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+      }
+      button {
+        cursor: pointer;
+        height: 100%;
+        padding: 1.4rem;
+        font-size: 1.4rem;
+        border: none;
+      }
+    }
+    label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5.33rem;
+      font-size: 2rem;
+      user-select: none;
+      color: #9a9f9c;
+      pointer-events: none;
+      transition: 0.25s ease;
+    }
+  }
+  span {
+    height: 100%;
+    width: 10rem;
+    font-size: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
+    p {
+      position: absolute;
+      top: 40%;
+      left: 43%;
+      font-size: 1.7rem;
+      color: #000;
+    }
+  }
+}
+
+.btn-menu {
+  display: none;
+}
+.nav {
+  &_mobile {
+    display: none;
+  }
+  &-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(77, 25, 136);
+    animation: fallIn linear 0.5s;
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  &--list {
+    font-size: 2rem;
+    line-height: 4.5rem;
+    transition: all 0.25s ease;
+  }
+  &--tab > .nav-items{
+      &:hover {
+        color: #9a9f9c;
+      }
+  }
+  &--contact {
+    display: flex;
+  }
+  &-ctc{
+    & > .nav-items:not(:nth-child(1)){
+        font-size: 1.65rem;
+    }
+    padding-top: 12rem;
+  }
+}
+.nav-close > i {
+  color: #ccc;
+}
+.nav_mobile--contact{
+  display: flex;
+  justify-content: center;
+  i{
+     color: #ccc;
+  }
+ 
+}
+//end
+// layout grid
