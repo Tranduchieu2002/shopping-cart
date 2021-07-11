@@ -4,7 +4,7 @@ var items = [
     product: "skirt",
     quantity: 1,
     price: 75,
-    image: "../wbShopDrb/accest/img/collec-3.png",
+    image: "../img/collec-3.png",
     size: "Small",
     remove: false
   },
@@ -12,7 +12,7 @@ var items = [
     product: "trousers",
     quantity: 1,
     price: 99,
-    image: "../wbShopDrb/accest/img/collec-1.png",
+    image: "../img/collec-1.png",
     size: "Small",
     remove: false
   },
@@ -20,7 +20,7 @@ var items = [
     product: "clothers",
     quantity: 1,
     price: 80,
-    image: "../wbShopDrb/accest/img/collec-7.png",
+    image: "../img/collec-7.png",
     size: "Midium",
     remove: false
   },
@@ -28,7 +28,7 @@ var items = [
     product: "sunglasses",
     quantity: 1,
     price: 72,
-    image: "../wbShopDrb/accest/img/collec-8.png",
+    image: "../img/collec-8.png",
     size: "Large",
     remove: false
   },
@@ -81,7 +81,7 @@ function remove(index) {
 function Render() {
   let subTutol = 0;
   items.forEach((item) => {
-    subTutol += item.quantity + item.price;
+    subTutol += item.quantity * item.price;
   });
   const total = subTutol + shipping
   // document.querySelector('.pro-cost').innerHTML = `$${items.price}`
@@ -152,3 +152,5 @@ function Render() {
   document.querySelector(".total").innerHTML = `$${subTutol.toFixed(2)}`;
 }
 Render( )
+
+document.getElementsByClassName('btn-menu')
