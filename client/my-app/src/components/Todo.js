@@ -8,7 +8,8 @@ const StyledButton = Styled(Button)`
 `
 export default function Todo({todo}) {
    return (
-      <StyledButton shouldFitContainer>
+      <StyledButton shouldFitContainer iconAfter
+      >
          {todo.name}
       </StyledButton>
    )
