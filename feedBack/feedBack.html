@@ -13,9 +13,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-   <link rel="stylesheet" href="./style/style.css">
-   <link rel="stylesheet" href="./layout/layout-grs.css">
-   <link rel="stylesheet" href="./home/home.css">
+   <link rel="stylesheet" href="../layout/layout-grs.css">
+   <link rel="stylesheet" href="../style/style.css">
+   <link rel="stylesheet" href="feedBack.css">
    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"> </script>
    <title>HOME</title>
 </head>
@@ -24,10 +24,13 @@
    <div class="grid wide">
       <!-- header -->
       <div class="row">
-         <di class="col lg-12 md-12 sm-12 ">
+         <div class="col lg-12 md-12 sm-12 ">
             <header class="header">
                <div class="header__app-logo">
-                  <h3>Logo</h3>
+                  <a href="../index.html">
+                     <h3>Logo</h3>
+                  </a>
+
                </div>
                <div class="header__search">
                   <form action="#">
@@ -37,7 +40,7 @@
                      <input type="text" placeholder=" " name="search" />
                   </form>
                   <label class="lable__search" for="Search">Search...</label>
-                  <a href="./shopping/shopping.html">
+                  <a href="../shopping/shopping.html">
                      <i class="uil uil-shopping-bag"></i>
                      <p>0</p>
                   </a>
@@ -64,11 +67,10 @@
                   </div>
                   <!-- Tab Nav_mobile -->
                   <ul class="nav_mobile--list nav_mobile--tab">
-                     <li class="nav_mobile-items active"><a href="#" class="nav_mobile-link">HOME</a></li>
+                     <li class="nav_mobile-items active"><a href="../index.html" class="nav_mobile-link">HOME</a></li>
                      <li class="nav_mobile-items"><a href="#" class="nav_mobile-link">SHOP</a></li>
                      <li class="nav_mobile-items"><a href="#" class="nav_mobile-link">ABOUT</a></li>
-                     <li class="nav_mobile-items"><a href="./feedBack/feedBack.html" class="nav_mobile-link">CONTACT</a>
-                     </li>
+                     <li class="nav_mobile-items"><a href="#" class="nav_mobile-link">CONTACT</a></li>
                   </ul>
                   <!-- More Nav_mobile -->
                   <ul class="nav_mobile--list nav_mobile-ctc">
@@ -76,7 +78,7 @@
                      </li>
                      <li class="nav_mobile-items"><a href="#" class="nav_mobile-link">Shipping & Returns</a>
                      </li>
-                     <li class="nav_mobile-items"><a href="./contact/contact.html" class="nav_mobile-link">Card </a>
+                     <li class="nav_mbile-items"><a href="./contact/contact.html" class="nav-link">Profile Card </a>
                      </li>
                      <li class="nav_mobile-items"><a href="#" class="nav_mobile-link"> Payments</a>
                      </li>
@@ -84,8 +86,7 @@
                   <!-- Contact Nav_mobile -->
                   <ul class="nav_mobile--list nav_mobile--contact">
                      <li class="nav_mobile--contact-icon">
-                        <a href="https://www.facebook.com/profile.php?id=100045972682678"
-                           class="nav_mobile--contact-link"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#" class="nav_mobile--contact-link"><i class="uil uil-facebook-f"></i></a>
                      </li>
                      <li class="nav_mobile--contact-icon">
                         <a href="#" class="nav_mobile--contact-link"><i class="uil uil-twitter"></i></a>
@@ -99,7 +100,7 @@
                   </label>
                </div>
             </header>
-
+         </div>
       </div>
       <!-- Container -->
       <div class="row">
@@ -108,10 +109,10 @@
             <div class="nav">
                <!-- Tab Nav -->
                <ul class="nav--list nav--tab">
-                  <li class="nav-items active"><a href="#" class="nav-link">HOME</a></li>
+                  <li class="nav-items active"><a href="../index.html" class="nav-link">HOME</a></li>
                   <li class="nav-items"><a href="#" class="nav-link">SHOP</a></li>
                   <li class="nav-items"><a href="#" class="nav-link">ABOUT</a></li>
-                  <li class="nav-items"><a href="./feedBack/feedBack.html" class="nav-link">CONTACT</a></li>
+                  <li class="nav-items"><a href="#" class="nav-link">CONTACT</a></li>
                </ul>
                <!-- More Nav -->
                <ul class="nav--list nav-ctc">
@@ -140,134 +141,86 @@
             <!-- End Navbar -->
          </div>
          <div class="col lg-8 md-8 sm-12">
-            <div class="Product__container   ">
-               <div class="grid">
-                  <div class="row">
-                     <div class="col lg-12 md-12 sm-12">
-                        <div class="img__silde">
-                           <div class="img__content">
-                              <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                                 src="./img/slide-1.png" id="img-slide" width="100%" height="450px" placeholder=""
-                                 alt="../">
-                              <div class="interact">
-                                 <span class="dot"></span>
-                                 <span class="dot"></span>
-                                 <span class="dot"></span>
-                                 <span class="dot"></span>
-                              </div>
-                           </div>
-                        </div>
-
-                     </div>
+            <div class="grid">
+               <div class="row center">
+                  <div class="col lg-12 md-12 sm-12 line pro__title">
+                     <span>FEATURED ITEMS</span>
                   </div>
-                  <div class="row">
-                     <div class="col lg-12 md-12 sm-12 line pro__title">
-                        <span>FEATURED ITEMS</span>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/collec-3.png" alt="">
-                           <div class="product__select--overlay">
-                              <a href="" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i>
-                              </a>
-                           </div>
-                           <span>Anna Blouse
-                              </br>
-                              $75.00$
-                           </span>
+                  <div class="col lg-8 md-8 sm-12">
+                     <form action="" id="contact-form">
+                        <span>
+                           ❤️ For all order support,please include your order
+                           number and date that you order was placed
+                        </span>
+                        <div class="form-group">
+                           <label for="firstName" class="form-label"> Enter your First Name</label>
+                           <input id="firstName" name="firstName" rules="required" type="text" placeholder=" Frist Name"
+                              class="form-control">
+                           <span class="form-massage"></span>
                         </div>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/collec-1.png" alt="">
-                           <div class="product__select--overlay">
-                              <a href="" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i>
-                              </a>
-                           </div>
-                           <span>Trousers
-                              </br>
-                              $99.00$
-                           </span>
+                        <div class="form-group">
+                           <label for="lastName" class="form-label"> Enter your Last Name</label>
+                           <input id="lastName" name="lastName" rules="required" type="text" placeholder=" Last Name"
+                              class="form-control">
+                           <span class="form-massage"></span>
                         </div>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/collec-7.png" alt="">
-                           <div class="product__select--overlay">
-                              <a href="" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i></a>
-                           </div>
-                           <span>Clothers
-                              </br>
-                              $80.00$
-                           </span>
+                        <div class="form-group ">
+                           <label for="email" class="form-label"> Enter your Email</label>
+                           <input id="email" name="email" rules="required|email" type="text"
+                              placeholder=" VD: email@domain.com" class="form-control">
+                           <span class="form-massage"></span>
                         </div>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/collec-8.png" alt="">
-                           <div class="product__select--overlay">
-                              <a href="" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i></a>
-                           </div>
-                           <span>Sunglasses
-                              </br>
-                              $72.00$
-                           </span>
+                        <div class="form-group">
+                           <label for="numbers" class="form-label"> Enter your Phone</label>
+                           <input id="numbers" name="numbers" rules="required|min:8|max:13" type="number" min="0"
+                              placeholder=" Phone" class="form-control">
+                           <span class="form-massage"></span>
                         </div>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/gai.png" width="100%" height="" alt="">
-                           <div class="product__select--overlay">
-                              <a href="https://www.facebook.com/quynh.luu.3766" target="_blank" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i></a>
-                           </div>
-                           <span>Anna Blouse
-                              </br>
-                              $75.00$
-                           </span>
+                        <div class="form-group">
+                           <label for="massage_confirmation" class="form-label"> Enter your Massage Here</label>
+                           <textarea id="massage_confirmation" rules="required" name="massage" rows="7" cols="60"
+                              placeholder="Enter your Massage Here" class="form-control"></textarea>
+
+                           <span class="form-massage"></span>
                         </div>
-                     </div>
-                     <div class="col lg-4 md-4 sm-6">
-                        <div class="product__select">
-                           <img onerror="this.src='./img/ui-image-placeholder-wireframes-apps-260nw-1037719204.png'"
-                              src="./img/1597480161_398_Loat-anh-Girl-Xinh-Cap-3-nu-sinh-tuoi-xi-teen .png" alt="">
-                           <div class="product__select--overlay">
-                              <a href="https://vi.wikipedia.org/wiki/Eimi_Fukada" target="_blank" class="option-icon">
-                                 Buy Now
-                                 <i class="uil uil-shopping-cart-alt"></i></a>
-                           </div>
-                           <span>Anna Blouse
-                              </br>Free
-                           </span>
-                        </div>
-                     </div>
-                     <div class="col lg-12 md-12 sm-12 btn__pro-more">
-                        <a href="" id="see-more"> <span>
-                              Shop All
-                           </span></a>
-                     </div>
+                        <button class="form-submit state-0">
+                           <span class="pre-state-msg">Submit</span>
+                           <span class="current-state-msg hide"> Sending...</span>
+                           <span class="done-state-msg hide"></span> Done!</button>
+                     </form>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   </div>
-   </div>
-   </div>
-   <script src="./home/home.js"></script>
+      <script>
+         ////////////////////////////////////////
+         const button = document.querySelector('.form-submit'),
+            stateMsg = document.querySelector('.pre-state-msg');
+
+         const updateButtonMsg = function () {
+            button.classList.add('state-1', 'animated');
+
+            //     setTimeout(finalButtonMsg, 2000);
+         };
+         /* const finalButtonMsg = function () {
+             button.classList.add('state-2');
+ 
+             //setTimeout(setInitialButtonState, 2000);
+          };
+         const setInitialButtonState = function () {
+             button.classList.remove('state-1', 'state-2', 'animated');
+          }; */
+
+         button.addEventListener('click', updateButtonMsg);
+      </script>
+
+      <script src="validator.js"></script>
+      <script>
+         var a = new Validator('#contact-form')
+         a.onSubmit = function (data) {
+            console.log(data)
+         }
+      </script>
+
 </body>

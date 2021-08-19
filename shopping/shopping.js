@@ -6,7 +6,7 @@ var items = [
     price: 75,
     image: "../img/collec-3.png",
     size: "Small",
-    remove: false
+    remove: false,
   },
   {
     product: "trousers",
@@ -14,7 +14,7 @@ var items = [
     price: 99,
     image: "../img/collec-1.png",
     size: "Small",
-    remove: false
+    remove: false,
   },
   {
     product: "clothers",
@@ -22,7 +22,7 @@ var items = [
     price: 80,
     image: "../img/collec-7.png",
     size: "Midium",
-    remove: false
+    remove: false,
   },
   {
     product: "sunglasses",
@@ -30,7 +30,7 @@ var items = [
     price: 72,
     image: "../img/collec-8.png",
     size: "Large",
-    remove: false
+    remove: false,
   },
 ];
 
@@ -45,7 +45,7 @@ ite ms = JSON.parse(contents); */
 // base
 var productIFM = document.querySelector(".pro-content");
 var inputQuantity = document.querySelector("#quantity");
-var shipping = 0
+var shipping = 0;
 
 // function main
 
@@ -59,9 +59,9 @@ const Quantity = 0;
 }
 addQuantity() */
 function updateProduct(index, quantity) {
-  if (quantity < 1) return
-  items[index].quantity = quantity
-  Render()
+  if (quantity < 1) return;
+  items[index].quantity = quantity;
+  Render();
 }
 /* function removeItem(product) {
   for (let i = 0; i < items.length; i++) {
@@ -72,26 +72,23 @@ function updateProduct(index, quantity) {
   render(items);
 } */
 function remove(index) {
-  if (index == 0) return
+  if (index == 0) return;
   items.splice(index, 1);
   Render();
 }
-
 
 function Render() {
   let subTutol = 0;
   items.forEach((item) => {
     subTutol += item.quantity * item.price;
   });
-  const total = subTutol + shipping
+  const total = subTutol + shipping;
   // document.querySelector('.pro-cost').innerHTML = `$${items.price}`
   /* document.querySelector('.pro-inf ' ,h4).innerHTML = `$${items.price}`
    document.querySelector('.pro-cost').innerHTML = `$${items.price}` */
-  const ren = items
-    .map(
-      (item) => {
-        if (!item.remove) {
-          return `
+  const ren = items.map((item) => {
+    if (!item.remove) {
+      return `
         <li class="pro-items">
             <span>
               <img class="pro-img" src="${item.image}" alt="">
@@ -110,21 +107,22 @@ function Render() {
             </div>
             <div class="pro-quantity btn">
              <button> <i class="uil uil-minus btn-minus">   </i> </button>
-              <input type="number" value="${item.quantity}" name="quantity" id="quantity">
+              <input type="number" value="${
+                item.quantity
+              }" name="quantity" id="quantity">
             <button>  <i class="uil uil-plus btn-plus">   </i> </button>
             </div>
             <div class="pro-cost-right"> $${item.price.toFixed(2)}
                 <i class="uil uil-times remove-product" )>    </i>
             </div>
             </div>
-        </li>`
-        }
-      }
-    )
+        </li>`;
+    }
+  });
   document.getElementById("pro-content").innerHTML = ren.join("");
   var removeItem = [...document.getElementsByClassName("remove-product")];
-  const minusBtn = [...document.getElementsByClassName("btn-minus")]
-  const plusBtn = [...document.getElementsByClassName("btn-plus")]
+  const minusBtn = [...document.getElementsByClassName("btn-minus")];
+  const plusBtn = [...document.getElementsByClassName("btn-plus")];
   //console.log(minusBtn,plusBtn)
   /*   removeItem.forEach(function (Element) {
   
@@ -138,19 +136,19 @@ function Render() {
 
   /* removeItem.forEach(rmv =>  */
   for (let i = 0; i < removeItem.length; i++) {
-    removeItem[i].addEventListener('click', function () {
-      remove(i)
-    })
-    minusBtn[i].addEventListener('click', function () {
-      updateProduct(i, items[i].quantity - 1)
-    })
-    plusBtn[i].addEventListener('click', function () {
-      updateProduct(i, items[i].quantity + 1)
-    })
-  };
+    removeItem[i].addEventListener("click", function () {
+      remove(i);
+    });
+    minusBtn[i].addEventListener("click", function () {
+      updateProduct(i, items[i].quantity - 1);
+    });
+    plusBtn[i].addEventListener("click", function () {
+      updateProduct(i, items[i].quantity + 1);
+    });
+  }
   document.querySelector(".sub").innerHTML = `$${subTutol.toFixed(2)}`;
   document.querySelector(".total").innerHTML = `$${subTutol.toFixed(2)}`;
 }
-Render( )
+Render();
 
-document.getElementsByClassName('btn-menu')
+document.getElementsByClassName("btn-menu");

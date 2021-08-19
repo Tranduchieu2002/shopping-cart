@@ -1,0 +1,193 @@
+@-webkit-keyframes short-press {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes short-press {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#contact-form {
+  font-size: 1.8rem;
+  color: #545d7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contact-form > span {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.ivalid input {
+  border: solid 0.7px #f33a58;
+}
+
+.ivalid textarea {
+  border: solid 0.7px #f33a58;
+}
+
+.ivalid span {
+  color: #f33a58;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input:not(:first-child) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 30px;
+  outline: none;
+  width: 100%;
+}
+
+input:not(:first-child):hover {
+  border: solid 1.2px #1be236;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.pro__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pro__title span {
+  background-color: #fff;
+  padding: 0 3rem;
+  font-size: 1.7rem;
+}
+
+.form-group {
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.form-group:last-of-type {
+  display: block;
+  width: 100%;
+}
+
+.form-group:last-of-type input[type="text"] {
+  background-color: transparent;
+  height: 15rem;
+  word-break: break-word;
+}
+
+.form-group .form-massage {
+  font-size: 1.4rem;
+}
+
+.form-submit {
+  position: relative;
+  left: 40%;
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  height: 38px;
+  width: 120px;
+  line-height: 38px;
+  overflow: hidden;
+  color: white;
+  background: #4dbecf;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-submit:hover, .form-submit:focus {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-submit.animated {
+  -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+          animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.form-submit > span {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.form-submit > span.pre-state-msg {
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.form-submit.state-1 .pre-state-msg {
+  margin-top: -38px;
+}
+
+.form-submit.state-2 .pre-state-msg {
+  margin-top: -76px;
+}
+/*# sourceMappingURL=feedBack.css.map */

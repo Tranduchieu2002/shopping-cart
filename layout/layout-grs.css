@@ -631,7 +631,7 @@
     padding: 8px;
   }
   .toggle {
-    display: block;
+    display: block ;
   }
   image {
     opacity: 1;
@@ -655,6 +655,7 @@
     display: flex;
     position: relative;
     margin-left: 10px;
+    display: none;
   }
   .header__search-mobile form {
     -webkit-box-sizing: border-box;
@@ -731,6 +732,9 @@
   .nav_mobile {
     display: block !important;
   }
+  .nav_mobile-link {
+    font-size: 2.7rem;
+  }
   .toggle > .btn-menu {
     display: block !important;
     font-size: 4rem;
@@ -769,7 +773,6 @@
   .nav_mobile {
     color: white;
     position: fixed;
-    font-size: 2.3rem;
     top: 18%;
     display: block;
     left: 5%;
@@ -783,21 +786,20 @@
   .nav_mobile--list {
     margin-top: 24px;
   }
+  .nav_mobile-link {
+    font-size: 2.3rem !important;
+  }
   .nav_mobile-items {
     /* padding: 1rem; */
     margin-bottom: 2rem;
   }
   .nav_mobile .toggle {
     position: absolute;
-    top: -18%;
-    right: 0;
+    top: -15%;
+    left: 7%;
   }
   .nav-close {
-    position: absolute;
-    right: 20%;
-    cursor: pointer;
-    font-size: 5rem;
-    display: none;
+    font-size: 5rem !important;
   }
 }
 /*# sourceMappingURL=layout-grs.css.map */

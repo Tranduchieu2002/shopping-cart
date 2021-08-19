@@ -619,6 +619,7 @@
   .toggle > .btn-menu{
     display: block !important;
   }
+
   .header {
     &__search-mobile {
       align-items: center;
@@ -630,6 +631,7 @@
       display: flex;
       position: relative;
       margin-left: 10px;
+      display: none ;
       form {
         box-sizing: border-box;
         height: 100%;
@@ -687,6 +689,9 @@
   }
   .nav_mobile{
       display: block !important;
+      &-link{
+        font-size: 2.7rem;
+      }
   }
  
    .toggle> .btn-menu {
@@ -725,7 +730,6 @@
     &_mobile {
     color: white;
       position: fixed;
-      font-size: 2.3rem;
       top: 18%;
       display: block;
       left: 5%;
@@ -736,22 +740,22 @@
       &--list {
         margin-top: 24px;
       }
+      &-link{
+        font-size: 2.3rem !important;
+
+      }
       &-items {
         /* padding: 1rem; */
         margin-bottom: 2rem;
       }
       .toggle{
           position: absolute;
-          top: -18%;
-          right: 0  ;
+          top: -15%;
+          left: 7%;
       }
     }
   }
   .nav-close {
-    position: absolute;
-    right: 20%;
-    cursor: pointer;
-    font-size: 5rem;
-    display: none;
+    font-size: 5rem !important;
   }
 }

@@ -212,7 +212,7 @@ span {
   transition: 0.25s ease;
 }
 
-.header span {
+.header a {
   height: 100%;
   width: 10rem;
   font-size: 5rem;
@@ -229,7 +229,7 @@ span {
   position: relative;
 }
 
-.header span p {
+.header a p {
   position: absolute;
   top: 40%;
   left: 43%;
@@ -251,7 +251,8 @@ span {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #4d1988;
+  background-color: #030007;
+  opacity: 0.8;
   -webkit-animation: fallIn linear 0.5s;
           animation: fallIn linear 0.5s;
   display: none;
@@ -301,5 +302,15 @@ span {
 
 .nav_mobile--contact i {
   color: #ccc;
+}
+
+@media only screen and (min-width: 46.25em) {
+  .pro__title {
+    position: relative !important;
+  }
+  .pro__title span {
+    position: absolute !important;
+    left: 35% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
